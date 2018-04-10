@@ -6,7 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context="com.kevinmcr.personas.Registro"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp">
@@ -32,7 +35,7 @@
         android:ems="10"
         android:fontFamily="@font/scada"
         android:hint="@string/cedula"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/txtNombre"
@@ -64,6 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/scada"
+            android:onClick="guardar"
             android:text="@string/guardar" />
 
         <Button
@@ -72,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/scada"
+            android:onClick="limpiar"
             android:text="@string/borrar" />
     </LinearLayout>
 </LinearLayout>
