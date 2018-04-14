@@ -16,6 +16,7 @@ public class Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
         lv = findViewById(R.id.lstOpciones);
         opc = getResources().getStringArray(R.array.opciones);
 

@@ -16,6 +16,7 @@ public class Listado extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listado);
+
         tabla = findViewById(R.id.tabla);
         personas = Datos.obtener();
 
